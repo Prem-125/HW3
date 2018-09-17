@@ -1,3 +1,4 @@
+
 % Prem Bharatia, Jared Renz, and Eric Li 
 % Team L04
 
@@ -10,8 +11,9 @@ movie_rev_max_index = find(movie_rev==movie_rev_max); %Finds index of largest va
 disp("               ID   Revenue    " + newline... % These three lines (7-9)are one command split by the ... operator
     + sprintf('Worst Movie:   %1$2d   $%2$-3.2g Mil', movie_rev_min_index,movie_rev_min)+ newline ...%They use the sprintf function to ensure that the table of best and worst movies would be formatted even if the data waas changed
     + sprintf('Best Movie:    %1$2d   $%2$-3.2g Mil', movie_rev_max_index,movie_rev_max))
-sorted_movie_rev= sort(movie_rev);%sorts the matrix movie_rev into ascending order
-disp(sorted_movie_rev);%displays the now sorted movie_rev matrix to the console
+sorted_movie_rev= sort(movie_rev); %Assigns the action of sorting the HW3Movies.dat file to the variable sorted_movie_rev.
+disp(sorted_movie_rev); %Displays the value for the variable sorted_movie_rev in the command window.
+
 
 %------------Part 2-------------------------------------------------------%
 
